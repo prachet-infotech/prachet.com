@@ -15,15 +15,32 @@ class Homepage extends StatelessWidget {
                 child: Text(
                   'Prachet Infotech Pvt. Ltd.',
                   style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                        fontSize: 26,
-                        color: Color.fromRGBO(252, 183, 7, 1),
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: 1
-                    )
-                  ),
+                      textStyle: TextStyle(
+                          fontSize: 26,
+                          color: Color.fromRGBO(252, 183, 7, 1),
+                          fontWeight: FontWeight.w600,
+                          letterSpacing: 1)),
                 ),
               ),
+            ),
+            Stack(
+              children: [
+                Image.asset("assets/images/prachet_header.webp"),
+                Positioned(
+                  width: 300,
+                  top: 80,
+                  left: 5,
+                  child: Text(
+                    "Connecting the 21st century tech with Ancient Wisdom",
+                    style: GoogleFonts.damion(
+                      textStyle: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 28
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),
